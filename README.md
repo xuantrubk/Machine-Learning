@@ -1,5 +1,4 @@
 # Machine-Learning
-Public repository - storing problems and solutions of online course: Machine Learning
 #######[@Machine learning - Stanford](https://www.coursera.org/learn/machine-learning)
 ========
 **Achievement**: 
@@ -27,3 +26,7 @@ Initial Setup Tutorial
 2. Go to a location of your choice
 3. Clone repository $git clone https://github.com/nguyencanhtrung/Machine-Learning.git
 4. Check status $git status
+
+#####Clone your own online repository
+1. Fork this repository
+2. Clone your own repository to your local machine
