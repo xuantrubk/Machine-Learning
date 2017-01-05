@@ -10,6 +10,7 @@ Public repository - storing problems and solutions of online course: Machine Lea
 * [Thanh C. Tran](mailto: "Private")
 * [Tru X. Bui](mailto: "Private")
 * [Sy C. Dang](mailto: "Private")
+
 ---
 Initial Setup Tutorial
 ---
