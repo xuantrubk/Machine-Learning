@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 JAN 2017 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 JAN 2017 21:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1217,7 +1217,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-<img/process.png, id=154, 396.48125pt x 260.975pt>
+<img/process.png, id=159, 396.48125pt x 260.975pt>
 File: img/process.png Graphic file (type png)
  <use img/process.png>
 Package pdftex.def Info: img/process.png used on input line 42.
@@ -1250,7 +1250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
 
-<img/contour_plot.png, id=171, 662.475pt x 351.3125pt>
+<img/contour_plot.png, id=176, 662.475pt x 351.3125pt>
 File: img/contour_plot.png Graphic file (type png)
 
 <use img/contour_plot.png>
@@ -1295,7 +1295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-[6] <img/gradient_descent_gen.png, id=208, 583.17876pt x 318.18875pt>
+[6] <img/gradient_descent_gen.png, id=213, 583.17876pt x 318.18875pt>
 File: img/gradient_descent_gen.png Graphic file (type png)
 
 <use img/gradient_descent_gen.png>
@@ -1338,7 +1338,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 179.
 
-<img/plot_no_iter.png, id=217, 408.52625pt x 356.33125pt>
+<img/plot_no_iter.png, id=222, 408.52625pt x 356.33125pt>
 File: img/plot_no_iter.png Graphic file (type png)
 
 <use img/plot_no_iter.png>
@@ -1355,7 +1355,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [8]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
- <img/poly_regression.png, id=223, 309.5565pt x 168.63pt>
+ <img/poly_regression.png, id=228, 309.5565pt x 168.63pt>
 File: img/poly_regression.png Graphic file (type png)
 
 <use img/poly_regression.png>
@@ -1375,7 +1375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
-<img/normal_equation_ex.png, id=235, 604.2575pt x 338.26375pt>
+<img/normal_equation_ex.png, id=240, 604.2575pt x 338.26375pt>
 File: img/normal_equation_ex.png Graphic file (type png)
 
 <use img/normal_equation_ex.png>
@@ -1434,21 +1434,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
  (./doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
-
-
-Package rerunfilecheck Warning: File `doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `doc.out':
-(rerunfilecheck)             Before: 23633545ECC2143B220450EC1B7DE5C2;1903
-(rerunfilecheck)             After:  7FB4468002D70A2B96F83A9B1C0F847F;1953.
+Package rerunfilecheck Info: File `doc.out' has not changed.
+(rerunfilecheck)             Checksum: 7FB4468002D70A2B96F83A9B1C0F847F;1953.
  ) 
 Here is how much of TeX's memory you used:
- 25431 strings out of 493014
- 467632 string characters out of 6133351
+ 25432 strings out of 493014
+ 467643 string characters out of 6133351
  662135 words of memory out of 5000000
- 28387 multiletter control sequences out of 15000+600000
+ 28388 multiletter control sequences out of 15000+600000
  14408 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,16n,77p,8495b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1468,10 +1461,10 @@ texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on doc.pdf (17 pages, 531239 bytes).
+Output written on doc.pdf (17 pages, 531540 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
+ 349 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
  58 named destinations out of 1000 (max. 500000)
- 295 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 

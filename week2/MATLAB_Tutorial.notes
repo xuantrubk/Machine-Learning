@@ -1,0 +1,303 @@
+---------------- THANH C. TRAN 15.01.2017 -----------------
+
+===========================================================
+    Octave/MATLAB Tutorial Notes
+===========================================================
+
+-----------------------------------------------------------
+    Basic Operations
+-----------------------------------------------------------
+
+Change prompt sign to “>> “:
+	[m] PS1(‘>> ‘) [\m]
+
+Display value of variables:
+	+ without semicolon (which supressing output)
+	+ using [m] disp(a); [\m] for more complex printing
+Display a string:
+	[m] disp(sprintf(‘2 decimals: %0.2f’, a)) /* --> 2 decimals: 3.14 */ [m]
+Change default display length of numbers:
+	[m] format long [\m]
+	[m] format short [\m]
+
+Matrix 3x2:
+	[m] A = [1 2; 3 4; 5 6] /* ; --> goto next row8 */ [\m]
+
+Row vector:
+	[m] v = [1 2 3] [\m]
+
+Column vector:
+	[m] v = [1; 2; 3] [\m]
+
+Row vector:
+	[m] v = 1:0.1:2 /* element from 1 to 1, step 0.1 */ [\m]
+
+All-one matrix 2x3:
+	[m] ones(2,3) [\m]
+
+All-zero matrix 2x3:
+	[m] zeros(1,3) [\m]
+
+All-random-element matrix 3x3:
+	- UNIFROM distribution: [m] rand(3,3) [\m]
+	- GAUSSIAN distribution: [m] randn(3,3) [\m]
+
+Display histogram of a vector:
+	[m] hist(w) [\m]
+
+Identity Matrix 4x4:
+	[m] eye(4) [\m]
+
+Get help:
+	[m] help rand [\m]
+
+-----------------------------------------------------------
+    Moving data arround
+-----------------------------------------------------------
+
+!!NOTE: MATLAB/Octave is one-indexing instead of zero-indexing like C/C++!!
+
+Get size of a matrix 3x2 in a row vector:
+	- size(A) —> [3 2]
+	- Get row size:
+		size(A,1)
+	- Get column size:
+		size(A,2)
+
+Get size of the longest dimension:
+	length(A) —> 3
+
+Show current directory:
+	pwd
+Change directory:
+	cd
+List directory:
+	ls
+
+Load data file:
+	- [m] load featuresX.dat [m]
+	- [m] load(‘featuresX.dat’) [m]
+
+Show all variables currently in workspace:
+	- [m] who [m]
+	- show detailed view:
+		[m] whos [m]
+
+Delete a variable from workspace:
+	[m] clear var_name [m]
+Delete all variables:
+	[m] clear [m]
+
+Take first 10 elements of vector priceY:
+	[m] v = priceY(1:10) [m]
+
+Save variable v to a binary file:
+	[m] save file_name.mat v; [m]
+Save variable to a text (ASCII) file:
+	[m] save file_name.txt v ascii [m]
+
+Get element at row 3 column 2 of matrix A:
+	[m] A(3, 2) [m]
+
+Get from / Assign to everything in 2nd row:
+	[m] A(2,:) /* : mean every element along that row/column */ [m]
+Get from / Assign to everything in 2nd column:
+	[m] A(:,2) [m]
+Get from / Assign to everything in 1st & 3rd row:
+	[m] A([1 3], :) [m]
+
+Append another column to the right of A:
+	[m] A = [A, [100; 101; 102]] [m]
+
+Flatten matrix’s columns to a single column vector:
+	[m] A(:) (get everything in every column) [m]
+
+Concatenate 2 matrix horizontally (in column):
+	[m] C = [A B] [m]
+Concatenate 2 matrix vertically (in row):
+	[m] C= [A;B] [m]
+
+-----------------------------------------------------------
+    Computing on Data
+-----------------------------------------------------------
+
+Matrix multiplication:
+	[m] A*B [m]
+Element-wise multiplication operation:
+	[m] A .* B [m]
+Element-wise operation:
+	[m] A.<operation>B [m]
+Element-wise logarithm of matrix A:
+	[m] log(A) [m]
+Element-wise exponent:
+	[m] exp(A) [m]
+Element-wise absolute:
+	[m] abs(A) [m]
+
+Matrix transpose:
+	[m] A’ [m]
+Get maximum element in row vector:
+	[m] max(a) [m]
+Get maximum element + its index:
+	[m][max, index] = max(a) [m]
+Column-wise maximum of matrix:
+	[m] max(A)
+		max(A, [], 1) /* —> Return row vector */
+	[m]
+Row-wise maximum of matrix:
+	[m] max(A, [], 2) /* —> return column vector */ [m]
+Get maximum element in matrix:
+	[m] max(max(A)) [m]
+	!!NOTE: 1st dimension refers to column, 2nd dimension refers to row (help max)!!
+
+Element-wise comparison:
+	[m] (A < 3) /* return matrix of comparison’s result */[m]
+Find index of element fulfilling the comparison:
+	[m] find(A<3) [m]
+
+Construct NxN matrix from 1 through N^2 with equal row, column, and diagonal sums:
+	[m] magic(N) [m]
+
+Add up all elements of vector:
+	[m] sum(a) [m]
+Multiply up all elements of matrix:
+	[m] prod(A) [m]
+Round-down all elements of matrix:
+	[m] floor(A) [m]
+Round-up all elements of matrix:
+	[m] ceiling(A) [m]
+
+max(X,Y) returns an array with the largest elements taken from X or Y.
+
+Sum up all elements in columns of matrix:
+	[m] sum(A, 1)
+		sum(A)
+	[m]
+Sum up all elements in rows of matrix:
+	[m] sum(A,2) [m]
+Sum-up all elements in up-down diagonal of matrix A:
+	[m] sum(sum(a.*eye(9))) [m]
+Sum-up all elements in down-up diagonal of matrix A:
+	[m] sum(sum(A.*flipud(eye(9))))[m]
+
+Pseudo-inverse of matrix A:
+	[m] pinv(A) [m]
+
+-----------------------------------------------------------
+    Plotting Data
+-----------------------------------------------------------
+
+Plot matrix y respect to matrix t (y = f(t)):
+	[m] plot(t, y) [m]
+Plot new figure ontop of the old one:
+	[m] hold on
+		plot(…)
+	[m]
+Plot in red color:
+	[m] plot(t, y, ‘r’) [m]
+Label x-axis:
+	[m] xlabel(’something’) [m]
+Label y-axis:
+	[m] ylabel(‘something’) [m]
+Label drawn line:
+	[m] lengend(‘cos’, ‘sin’) [m]
+Label title of the plot:
+	[m] title(‘something’) [m]
+Save the plot to PNG file:
+	[m] print -dpng ‘myPlot.png’ [m]
+Close the figure window:
+	[m] close [m]
+
+Start a new figure 1 window:
+	[m] figure(1)
+		plot(…)
+	[m]
+
+Divide the figure into 1x2 grid and access the first grid’s element:
+	[m] subplot(1,2,1)
+		plot(…)
+	[m]
+
+Scale x-axis in range a to b & y-axis in range c to d of the recent plot:
+	[m] axis([a b c d]) [m]
+
+Clear the figure window:
+	[m] clf [m]
+
+Plot a grid of color where different font represent different element of matrix:
+	[m] imagesc(A)
+		colorbar // Show color bar
+		colormap gray // Change color map to grayscale:
+	[m]
+
+Type multiple command in one line and print out output of each command - comma chaining:
+	--> separate by ,
+
+-----------------------------------------------------------
+    Control Statements
+-----------------------------------------------------------
+
+For loop:
+[m]
+	for i = 1:10,
+		v(i) = 2^i;
+	end;
+
+	for i = indices,
+		…;
+	end;
+[m]
+
+While loop:
+[m]
+	while i <= 5,
+		…;
+		break;
+	end;
+[m]
+
+If statement:
+[m]
+	if i == 6,
+		…;
+	end;
+
+	if v(1) == 1,
+		…;
+	elseif v(1) == 2,
+		…;
+	else
+		..;
+	end;
+[m]
+
+Quit Octave/MATLAB:
+	[m] quit or exit [m]
+
+Functions: create a file called function_name.m & define the function in it:
+	[m]
+	function [return_name, …] = function_name(paramter_name, …)
+	…;
+	end
+	[\m]
+!!NOTE: Change to directory containing the file to use that function_name by invoking:!!
+	[m]	[ret, …] = function_name(argument_name, …) [m]
+
+Change search paths:
+	[m] addpath(‘…’) [m]
+
+-----------------------------------------------------------
+    Vectorization
+-----------------------------------------------------------
+
+Utilize optimized numerical linear algebra libraries which is highly hardware-parallel & vector-machine-instruction implementation
+E.g Sigma operator in the Cost Function can be calculated using matrix multiplication library
+
+
+
+
+
+
+
+
+
