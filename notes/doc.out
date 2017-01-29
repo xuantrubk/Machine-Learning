@@ -1,0 +1,28 @@
+\BOOKMARK [1][-]{section.1}{Single variable linear Regression}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Notation}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Model Representation}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Cost function}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Contour plot}{subsection.1.3}% 5
+\BOOKMARK [1][-]{section.2}{Algorithm gradient descent}{}% 6
+\BOOKMARK [1][-]{section.3}{Multivariate linear regression}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Multiple features - multiple variables}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Hypothesis}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Gradient Descent for multiple variables}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Cost function}{subsection.3.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Notes to improve runtime of Gradient Descent}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Scaling feature}{subsection.3.4}% 13
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Mean normalization}{subsection.3.4}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Learning Rate }{subsection.3.4}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Features vs Polynomial Regression}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Features}{subsection.3.5}% 17
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Polynomial Regression}{subsection.3.5}% 18
+\BOOKMARK [1][-]{section.4}{NEW ALGORITHM: Analytically method to compute theta}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Normal equation}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Normal Equation Noninvertibility}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Practical part}{}% 22
+\BOOKMARK [1][-]{section.6}{Appendix}{}% 23
+\BOOKMARK [2][-]{section*.11}{List of Figures}{section.6}% 24
+\BOOKMARK [2][-]{section*.11}{List of Tables}{section.6}% 25
+\BOOKMARK [2][-]{section*.11}{List of Listings}{section.6}% 26
+\BOOKMARK [2][-]{section*.12}{List of Abbreviations}{section.6}% 27
+\BOOKMARK [2][-]{section*.12}{References}{section.6}% 28
