@@ -8,7 +8,6 @@
 * [Son D. Nguyen](mailto: "Private")
 * [Thanh C. Tran](mailto: "Private")
 * [Tru X. Bui](mailto: "Private")
-* [Sy C. Dang](mailto: "Private")
 
 ---
 Initial Setup Tutorial
