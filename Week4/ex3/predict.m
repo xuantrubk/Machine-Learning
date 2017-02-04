@@ -22,11 +22,20 @@ p = zeros(size(X, 1), 1);
 %
 
 
+% Add ones to the X data matrix
+X = [ones(m, 1) X];
 
+%Compute hidden layer a2
+a2 = sigmoid (X*Theta1');
 
+% Add ones to the a2 data matrix
+a2 = [ones(m, 1) a2];
 
+%Compute output layer a2
+a3 = sigmoid (a2*Theta2');
 
-
+%return the predict p matrix
+[max_value, p] = max (a3,[],2);
 
 
 % =========================================================================
