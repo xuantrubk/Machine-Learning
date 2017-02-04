@@ -30,9 +30,14 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+h = sigmoid(X*all_theta');
 
+%If called with one input and two output arguments, min also returns the first index of the minimum value(s). 
+%	[x, ix] = max ([1, 3, 0, 2, 0])
+%	    ⇒  x = 0
+%	       ix = 3
 
-
+[max_value, p] = max (h,[],2);
 
 
 
