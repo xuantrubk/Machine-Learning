@@ -62,10 +62,46 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+%Recode the labels Y as vectors of 0 and 1
+
+Y = zeros(num_labels, m);
+for i = 1 : m
+	 Y_row = y(i);
+	 Y(Y_row, i) = 1;
+end
 
 
+%Feedforward computation for ho(x)
+X = [ones(m,1) X];
+z2 = Theta1*X';
+
+%	hidden_layer
+a2 = sigmoid(z2);
+a2 = [ones(1, m) ; a2];
+
+%	Output layer
+z3 = Theta2*a2 ;
+h = sigmoid (z3);
 
 
+% Cost Function for neural network without regularization
+J = (1 / m)* sum(sum(-Y.*log(h) - (1 - Y).*log(1-h)));
+
+% Cost Function for neural network with regularization
+J = J + (lambda / (2*m)) * (sum(sum(Theta1(:,2:end).^2,2)) + sum(sum(Theta2(:,2:end).^2,2)));
+
+
+% Backpropagation
+delta_3 = (h - Y);
+delta_2 = (Theta2(:,2:end)' * delta_3) .* sigmoidGradient(z2);
+
+	%Gradient for the neural network for j <> 0
+Theta1_grad = 1/m * ( delta_2 * X + lambda*Theta1 );
+Theta2_grad = 1/m * ( delta_3 * a2' + lambda*Theta2 );
+
+	%Gradient for the neural network for j = 0
+Theta1_grad(:,1) = Theta1_grad(:,1) - (lambda/m)*Theta1(:,1);
+Theta2_grad(:,1) = Theta2_grad(:,1) - (lambda/m)*Theta2(:,1);
 
 
 
